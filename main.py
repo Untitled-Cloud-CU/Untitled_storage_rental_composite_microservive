@@ -1,6 +1,6 @@
 # main.py
 from fastapi import FastAPI
-from app.api_clients import get_addresses, delete_address
+from api_client import get_addresses, delete_address
 
 app = FastAPI(title="Composite Microservice")
 
