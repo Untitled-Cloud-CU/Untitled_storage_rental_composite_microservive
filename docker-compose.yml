@@ -1,0 +1,9 @@
+services:
+  composite:
+    build: .
+    container_name: composite-app
+    ports:
+      - "8001:8000"
+    env_file:
+      - .env
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
