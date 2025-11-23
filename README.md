@@ -21,7 +21,7 @@ uvicorn app.main:app --reload --port 8001
 
 ## Run Composite Microservice
 ```bash
-USERS_BASE="http://localhost:8001/api/v1/users" \
+USERS_BASE="[http://localhost:8001/api/v1/users](https://users-service-257248974057.us-central1.run.app/api/v1/users)" \
 ADDRESSES_BASE="http://localhost:8000/addresses" \
 uvicorn main:app --reload --port 8002
 ```
